@@ -4,9 +4,11 @@ on:
   push:
     paths:
       - 'MiHome-iOS.py'
+      - '.github/workflows/ios.yml'
   pull_request:
     paths:
       - 'MiHome-iOS.py'
+      - '.github/workflows/ios.yml'
     branches: [ "*" ]
   schedule:
     - cron: '0 5 * * *'
