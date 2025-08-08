@@ -1,3 +1,4 @@
+10.9.100.12636 https://cnbj1.fds.api.xiaomi.com/mijia-ios-external/ipa/MiHome-ios-Feature-build12636.ipa
 10.8.100.12127 https://cnbj1-fds.api.xiaomi.net/mijia-ios-internal/ipa/MiHome-ios-Feature-build12127.ipa
 10.6.100.594 https://cnbj1-fds.api.xiaomi.net/mijia-ios-internal/ipa/MiHome-ios-Feature-Xcode162-build594.ipa
 10.5.100.10911 https://cdn.cnbj1.fds.api.mi-img.com/mijia-ios-adhoc/AppStore/adhoc/ipa/MiHome-ios-Feature-build10911.ipa
