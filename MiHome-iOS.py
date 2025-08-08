@@ -82,7 +82,7 @@ def fetch_version(build_number):
 
 def main():
     latest_build = get_latest_build()
-    build_range = range(latest_build + 1, latest_build + 12635)
+    build_range = range(latest_build + 1, latest_build + 1000 + 1)
     results = []
     build_numbers = []
 

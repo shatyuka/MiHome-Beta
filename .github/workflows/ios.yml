@@ -1,0 +1,46 @@
+name: iOS
+
+on:
+  push:
+    paths:
+      - 'MiHome-iOS.py'
+  pull_request:
+    paths:
+      - 'MiHome-iOS.py'
+    branches: [ "*" ]
+  schedule:
+    - cron: '0 5 * * *'
+    - cron: '0 17 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: pip3 install --upgrade pip && pip3 install -r requirements.txt
+
+      - name: Run bot
+        run: python3 MiHome-iOS.py
+
+      - name: Commit and Push Changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [[ -n $(git status --porcelain) ]]; then
+            git add .
+            build_number=$(cat MiHome-iOS.cache.txt)
+            git commit -m "Update $build_number"
+            git push
+          fi
