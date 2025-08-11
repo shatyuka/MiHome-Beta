@@ -45,7 +45,7 @@ def safe_request(method, url, **kwargs):
 def fetch_version(build_number):
     plist_url = plist_url_template.format(build_number=build_number)
     plist_resp = safe_request("get", plist_url, timeout=10)
-    if plist_resp is not None and plist_resp.status_code != 200:
+    if plist_resp is None or plist_resp.status_code != 200:
         return None, None
     plist_data = plistlib.loads(plist_resp.content)
     items = plist_data.get("items", [])
