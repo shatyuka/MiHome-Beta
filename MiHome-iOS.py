@@ -20,6 +20,17 @@ def get_session():
     return thread_local.session
 
 
+def get_all():
+    results = []
+    if os.path.exists(all_file):
+        with open(all_file) as f:
+            for line in f:
+                parts = line.strip().split()
+                if len(parts) >= 2:
+                    results.append((parts[0], parts[1]))
+    return results
+
+
 def get_latest_build():
     if os.path.exists(cache_file):
         with open(cache_file) as f:
@@ -83,7 +94,8 @@ def fetch_version(build_number):
 def main():
     latest_build = get_latest_build()
     build_range = range(latest_build + 1, latest_build + 1000 + 1)
-    results = []
+    results = get_all()
+    latest_package_url = results[0][1] if results else ""
     build_numbers = []
 
     with ThreadPoolExecutor(max_workers=64) as executor:
@@ -92,27 +104,25 @@ def main():
             res = future.result()
             build_number = future_to_build[future]
             if res and all(res):
-                results.append((build_number, res[0], res[1]))
+                results.append((res[0], res[1]))
                 build_numbers.append(build_number)
 
-    results.sort(key=lambda x: [int(i) for i in x[1].split('.')], reverse=True)
-    old = ""
-    if os.path.exists(all_file):
-        with open(all_file) as f:
-            old = f.read()
-    with open(all_file, "w") as f:
-        for build_number, bundle_version, package_url in results:
-            f.write(f"{bundle_version} {package_url}\n")
-        f.write(old)
-
     if build_numbers:
-        with open(cache_file, "w") as f:
-            f.write(str(max(build_numbers)))
+        # all
+        results.sort(key=lambda x: [int(i) for i in x[0].split('.')], reverse=True)
+        with open(all_file, "w") as f:
+            for bundle_version, package_url in results:
+                f.write(f"{bundle_version} {package_url}\n")
 
-    if results:
-        latest_package_url = results[0][2]
-        with open(latest_file, "w") as f:
-            f.write(latest_package_url)
+        if results[0][1] != latest_package_url:
+            # cache
+            with open(cache_file, "w") as f:
+                f.write(str(max(build_numbers)))
+
+            # latest
+            latest_package_url = results[0][1]
+            with open(latest_file, "w") as f:
+                f.write(latest_package_url)
 
 
 if __name__ == "__main__":
