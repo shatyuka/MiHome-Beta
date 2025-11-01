@@ -108,6 +108,8 @@ def main():
                 build_numbers.append(build_number)
 
     if build_numbers:
+        results = list(set(results))
+
         # all
         results.sort(key=lambda x: [int(i) for i in x[0].split('.')], reverse=True)
         with open(all_file, "w") as f:
