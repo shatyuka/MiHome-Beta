@@ -96,7 +96,7 @@ def main():
     build_range = range(latest_build + 1, latest_build + 1000 + 1)
     results = get_all()
     latest_package_url = results[0][1] if results else ""
-    build_numbers = []
+    new_results = []
 
     with ThreadPoolExecutor(max_workers=64) as executor:
         future_to_build = {executor.submit(fetch_version, i): i for i in build_range}
@@ -105,9 +105,9 @@ def main():
             build_number = future_to_build[future]
             if res and all(res):
                 results.append((res[0], res[1]))
-                build_numbers.append(build_number)
+                new_results.append((res[0], res[1], build_number))
 
-    if build_numbers:
+    if new_results:
         results = list(set(results))
 
         # all
@@ -117,9 +117,11 @@ def main():
                 f.write(f"{bundle_version} {package_url}\n")
 
         if results[0][1] != latest_package_url:
+            new_results.sort(key=lambda x: [int(i) for i in x[0].split('.')], reverse=True)
+
             # cache
             with open(cache_file, "w") as f:
-                f.write(str(max(build_numbers)))
+                f.write(str(new_results[0][2]))
 
             # latest
             latest_package_url = results[0][1]
