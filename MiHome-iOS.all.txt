@@ -1,6 +1,7 @@
 11.1.200.15043 https://mijia-ios-external.cnbj1.mi-fds.com/mijia-ios-external/ipa/MiHome-ios-Feature-build15043.ipa
 11.1.103.14845 https://mijia-ios-external.cnbj1.mi-fds.com/mijia-ios-external/ipa/MiHome-ios-Feature-build14845.ipa
 11.1.102.14722 https://mijia-ios-external.cnbj1.mi-fds.com/mijia-ios-external/ipa/MiHome-ios-Feature-build14722.ipa
+11.1.101.15086 https://mijia-ios-external.cnbj1.mi-fds.com/mijia-ios-external/ipa/MiHome-ios-Feature-build15086.ipa
 11.1.101.15041 https://mijia-ios-external.cnbj1.mi-fds.com/mijia-ios-external/ipa/MiHome-ios-Feature-build15041.ipa
 11.1.101.14703 https://mijia-ios-external.cnbj1.mi-fds.com/mijia-ios-external/ipa/MiHome-ios-Feature-build14703.ipa
 11.1.101.14625 https://mijia-ios-external.cnbj1.mi-fds.com/mijia-ios-external/ipa/MiHome-ios-Feature-build14625.ipa
@@ -107,9 +108,11 @@
 8.2.100.497 https://cdn.cnbj1.fds.api.mi-img.com/mijia-ios-adhoc/AppStore/adhoc/ipa/MiHome-ios-Feature-build497.ipa
 8.2.100.399 https://cdn.cnbj1.fds.api.mi-img.com/mijia-ios-adhoc/AppStore/adhoc/ipa/MiHome-ios-Feature-build399.ipa
 8.1.100.263 https://cdn.cnbj1.fds.api.mi-img.com/mijia-ios-adhoc/AppStore/adhoc/ipa/MiHome-ios-Feature-build263.ipa
+7.12.100.15959 https://cdn.cnbj1.fds.api.mi-img.com/mijia-ios-adhoc/AppStore/adhoc/ipa/MiHome-ios-Feature-build15959.ipa
 7.12.100.15715 https://cdn.cnbj1.fds.api.mi-img.com/mijia-ios-adhoc/AppStore/adhoc/ipa/MiHome-ios-Feature-build15715.ipa
 7.12.100.15700 https://cdn.cnbj1.fds.api.mi-img.com/mijia-ios-adhoc/AppStore/adhoc/ipa/MiHome-ios-Feature-build15700.ipa
 7.12.100.15640 https://cdn.cnbj1.fds.api.mi-img.com/mijia-ios-adhoc/AppStore/adhoc/ipa/MiHome-ios-Feature-build15640.ipa
+7.12.100.2.15920 https://cdn.cnbj1.fds.api.mi-img.com/mijia-ios-adhoc/AppStore/adhoc/ipa/MiHome-ios-Feature-build15920.ipa
 7.11.100.15408 https://cdn.cnbj1.fds.api.mi-img.com/mijia-ios-adhoc/AppStore/adhoc/ipa/MiHome-ios-Feature-build15408.ipa
 7.11.100.15216 https://cdn.cnbj1.fds.api.mi-img.com/mijia-ios-adhoc/AppStore/adhoc/ipa/MiHome-ios-Feature-build15216.ipa
 7.10.100.3341 https://cdn.cnbj1.fds.api.mi-img.com/mijia-ios-adhoc/AppStore/adhoc/ipa/MiHome-ios-Feature-build3341.ipa
