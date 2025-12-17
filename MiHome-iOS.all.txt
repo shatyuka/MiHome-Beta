@@ -12,6 +12,7 @@
 11.1.101.14625 https://mijia-ios-external.cnbj1.mi-fds.com/mijia-ios-external/ipa/MiHome-ios-Feature-build14625.ipa
 11.1.100.15315 https://mijia-ios-external.cnbj1.mi-fds.com/mijia-ios-external/ipa/MiHome-ios-Feature-build15315.ipa
 11.1.100.14610 https://mijia-ios-external.cnbj1.mi-fds.com/mijia-ios-external/ipa/MiHome-ios-Feature-build14610.ipa
+11.0.399.15332 https://mijia-ios-external.cnbj1.mi-fds.com/mijia-ios-external/ipa/MiHome-ios-Feature-build15332.ipa
 11.0.200.14507 https://mijia-ios-external.cnbj1.mi-fds.com/mijia-ios-external/ipa/MiHome-ios-Feature-build14507.ipa
 11.0.200.14328 https://cnbj1-fds.api.xiaomi.net/mijia-ios-internal/ipa/MiHome-ios-Feature-build14328.ipa
 11.0.199.15270 https://cnbj1-fds.api.xiaomi.net/mijia-ios-internal/ipa/MiHome-ios-Feature-build15270.ipa
