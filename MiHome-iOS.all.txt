@@ -4,6 +4,7 @@
 11.1.301.15393 https://mijia-ios-external.cnbj1.mi-fds.com/mijia-ios-external/ipa/MiHome-ios-Feature-build15393.ipa
 11.1.300.15412 https://mijia-ios-external.cnbj1.mi-fds.com/mijia-ios-external/ipa/MiHome-ios-Feature-build15412.ipa
 11.1.300.15372 https://mijia-ios-external.cnbj1.mi-fds.com/mijia-ios-external/ipa/MiHome-ios-Feature-build15372.ipa
+11.1.202.15734 https://mijia-ios-external.cnbj1.mi-fds.com/mijia-ios-external/ipa/MiHome-ios-Feature-build15734.ipa
 11.1.200.15371 https://mijia-ios-external.cnbj1.mi-fds.com/mijia-ios-external/ipa/MiHome-ios-Feature-build15371.ipa
 11.1.200.15043 https://mijia-ios-external.cnbj1.mi-fds.com/mijia-ios-external/ipa/MiHome-ios-Feature-build15043.ipa
 11.1.199.15262 https://mijia-ios-external.cnbj1.mi-fds.com/mijia-ios-external/ipa/MiHome-ios-Feature-build15262.ipa
