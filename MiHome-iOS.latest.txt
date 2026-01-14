@@ -1,1 +1,1 @@
-https://cnbj1-fds.api.xiaomi.net/mijia-ios-internal/ipa/MiHome-ios-Feature-build15570.ipa
+https://cnbj1.fds.api.xiaomi.com/mijia-ios-external/ipa/MiHome-ios-Feature-build15791.ipa
